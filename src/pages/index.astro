@@ -11,3 +11,9 @@ import AddTodo from '../components/AddTodo.astro';
     <TodoList />
   </main>
 </Layout>
+
+<script>
+  // This ensures that the client-side scripts in the components are executed
+  import '../components/AddTodo.astro';
+  import '../components/TodoList.astro';
+</script>
