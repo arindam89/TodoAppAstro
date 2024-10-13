@@ -1,9 +1,12 @@
 {
   "tasks": {
-    "dev": "deno run --allow-net --allow-read --allow-env --allow-run --allow-write --watch=./src npm:astro dev",
-    "start": "deno run --allow-net --allow-read --allow-env --allow-run --allow-write npm:astro dev",
-    "build": "deno run --allow-net --allow-read --allow-env --allow-run --allow-write npm:astro build",
-    "preview": "deno run --allow-net --allow-read --allow-env --allow-run --allow-write npm:astro preview"
+    "start": "deno run --allow-net --allow-read --allow-write src/server.ts",
+    "test": "deno test --allow-read --allow-write"
   },
-  "importMap": "./import_map.json"
+  "importMap": "import_map.json",
+  "permissions": {
+    "read": true,
+    "write": true,
+    "net": true
+  }
 }
