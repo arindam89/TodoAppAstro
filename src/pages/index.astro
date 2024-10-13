@@ -1,0 +1,13 @@
+---
+import Layout from '../layouts/Layout.astro';
+import TodoList from '../components/TodoList.astro';
+import AddTodo from '../components/AddTodo.astro';
+---
+
+<Layout title="Astro Deno Todo App">
+  <main class="container mx-auto px-4 py-8">
+    <h1 class="text-4xl font-bold text-center mb-8">Astro Deno Todo App</h1>
+    <AddTodo />
+    <TodoList />
+  </main>
+</Layout>

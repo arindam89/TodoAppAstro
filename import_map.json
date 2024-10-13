@@ -1,0 +1,8 @@
+{
+  "imports": {
+    "astro": "npm:astro@3.0.12",
+    "@astrojs/deno": "npm:@astrojs/deno@5.0.1",
+    "@astrojs/tailwind": "npm:@astrojs/tailwind@5.0.0",
+    "tailwindcss": "npm:tailwindcss@3.3.3"
+  }
+}
